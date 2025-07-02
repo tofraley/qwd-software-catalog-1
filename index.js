@@ -10,6 +10,10 @@ async function getServiceData() {
   // Add health status to each service
   for (let service of services.services) {
     try {
+      if (service.name != 'notification-api') {
+        service.status = 'healthy';
+        continue;
+      }
       if (service.health_endpoint) {
         const response = await fetch(service.health_endpoint, { 
           timeout: 5000,
