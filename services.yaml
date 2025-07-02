@@ -1,0 +1,16 @@
+# services.yaml
+services:
+  - name: "user-api"
+    description: "Handles user authentication and profiles"
+    owner: "auth-team"
+    repo: "https://github.com/company/user-api"
+    
+  - name: "payment-service"
+    description: "Processes payments and billing"
+    owner: "billing-team" 
+    repo: "https://github.com/company/payments"
+    
+  - name: "notification-api"
+    description: "Sends emails and push notifications"
+    owner: "platform-team"
+    repo: "https://github.com/company/notifications"
