@@ -4,7 +4,7 @@ const yaml = require('js-yaml');
 
 const app = express();
 
-async function getServiceData() {
+function getServiceData() {
   return yaml.load(fs.readFileSync('services.yaml', 'utf8'));
 }
 
@@ -44,4 +44,4 @@ app.get('/', async (req, res) => {
   res.send(html);
 });
 
-app.listen(3010, () => console.log('Catalog running on port 3000'));
+app.listen(3010, () => console.log('Catalog running on port 3010'));
