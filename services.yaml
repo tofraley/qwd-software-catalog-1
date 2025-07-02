@@ -1,19 +1,19 @@
 # services.yaml
 services:
+  - name: "payment-ui"
+    description: "Processes payments and billing"
+    owner: "billing-team" 
+    repo: "https://github.com/company/payment-ui"
+    health_endpoint: "https://example.com/payment-ui/health"
+
   - name: "user-api"
     description: "Handles user authentication and profiles"
     owner: "auth-team"
     repo: "https://github.com/company/user-api"
     health_endpoint: "https://example.com/user-api/health"
     
-  - name: "payment-service"
-    description: "Processes payments and billing"
-    owner: "billing-team" 
-    repo: "https://github.com/company/payments"
-    health_endpoint: "https://example.com/payments/health"
-    
   - name: "notification-api"
     description: "Sends emails and push notifications"
     owner: "platform-team"
-    repo: "https://github.com/company/notifications"
-    health_endpoint: "https://example.com/notifications/health"
+    repo: "https://github.com/company/notification-api"
+    health_endpoint: "https://example.com/notification-api/health"
